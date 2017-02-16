@@ -1,0 +1,18 @@
+/*
+	Plugin	: MJ Accordion Banner
+	Author	: Michael Janea (www.michaeljanea.com)
+	Version	: 1.0.0
+*/
+
+.mj_accordion_banner {width:100%; height:350px; overflow:hidden;}
+.mj_accordion_banner > ul {width:100%; display:table; table-layout:fixed; margin:0; padding:0;}
+.mj_accordion_banner > ul > li {display:table-cell; vertical-align:bottom; position:relative; width:16.666%; height:350px; background-repeat:no-repeat; background-position:center center; transition:all 500ms ease; background-size:cover;}
+.mj_accordion_banner > ul > li > .mj_accordion_outer {display:block; overflow:hidden; width:100%; transition:all 200ms ease;}
+.mj_accordion_banner .mj_accordion_inner {display:block; height:350px; width:100%; position:relative; z-index:3; padding:15px 20px; box-sizing:border-box; color:#fff; text-decoration:none; transition:all 200ms ease;}
+.mj_accordion_banner .mj_accordion_inner * {opacity:0; margin:0; width:100%; text-overflow:ellipsis; position:relative; z-index:5; white-space:nowrap; overflow:hidden; -webkit-transform:translateX(-20px); transform:translateX(-20px); -webkit-transition:all 400ms ease; transition:all 400ms ease;}
+.mj_accordion_banner .mj_accordion_title {text-overflow:clip; font-size:24px; text-transform:uppercase; margin-bottom:2px; top:160px;}
+.mj_accordion_banner .mj_accordion_caption {top:160px; font-size:13.5px;}
+.mj_accordion_banner > ul:hover > li {width:8%;}
+.mj_accordion_banner > ul:hover > li:hover {width:60%;}
+.mj_accordion_banner > ul:hover > li:hover .mj_accordion_outer {background:rgba(0, 0, 0, 0.4);}
+.mj_accordion_banner > ul:hover > li:hover .mj_accordion_inner * {opacity:1; -webkit-transform:translateX(0); transform:translateX(0);}
